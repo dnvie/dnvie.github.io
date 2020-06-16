@@ -1,0 +1,342 @@
+
+<html>
+    
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Channel Points Calculator</title>
+    <link rel="shortcut icon" href="/Assets/faviconTTV.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 615 46">
+            <text id="Twitch.tv_Channel_Points_Calculator" data-name="Twitch.tv Channel Points Calculator"
+                transform="translate(0 36)" fill="#d08aff" font-size="36.048" font-family="Circular-Black, Circular"
+                font-weight="800">
+                <tspan x="0" y="0">Twitch.tv</tspan>
+                <tspan y="0" xml:space="preserve" fill="#1d0056"> Channel Points Calculator</tspan>
+            </text>
+        </svg>
+
+    </header>
+
+    <div class="buttons">
+        <label for=""></label><input class="hoursInput" type="textbox" name="watchtime"></input><br>
+        <input type="checkbox" id="sub" name="sub" value="Subscriber">
+        <label for="sub"></label><br>
+        <button class="calculateButton" onclick="calculate()">Calculate </button><br>
+        <label for"output"></label><input class="resultOutput" type="textbox" id="output"></input>
+        <svg class="lineRight" xmlns="http://www.w3.org/2000/svg" width="177" height="1" viewBox="0 0 177 1">
+            <path id="Rechteck_1" data-name="Rechteck 1"
+                d="M.5,0H177a0,0,0,0,1,0,0V1a0,0,0,0,1,0,0H.5A.5.5,0,0,1,0,.5v0A.5.5,0,0,1,.5,0Z" fill="#fff" />
+        </svg>
+
+    </div>
+    <div class="text">
+        <p class="watchedText">
+            Hours watched:
+        </p>
+        <p class="subscribedText">
+            Subscribed?
+        </p>
+        <p class="resultText">
+            Points you will earn*:
+        </p>
+        <p class="info">
+            *Assuming you are using an extension to claim all Bonuses, like <a
+                href="https://chrome.google.com/webstore/detail/twitch-channel-points-aut/pbeamibpehihpjljabhnchghlbneiane">"Channel
+                Points Autoclicker".</a> <br>
+            (Not counting daily streak bonuses.)
+        </p>
+
+
+        <svg class="lineLeft" xmlns="http://www.w3.org/2000/svg" width="192" height="1" viewBox="0 0 192 1">
+            <path id="Rechteck_2" data-name="Rechteck 2"
+                d="M.5,0H192a0,0,0,0,1,0,0V1a0,0,0,0,1,0,0H.5A.5.5,0,0,1,0,.5v0A.5.5,0,0,1,.5,0Z"
+                transform="translate(192 1) rotate(180)" fill="#fff" />
+        </svg>
+
+
+    </div>
+
+    <div class="div">
+
+
+    </div>
+</body>
+
+
+<style>
+    * {
+        background-color: #9146FF;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    header {
+        position: fixed;
+        height: 10%;
+        width: 70%;
+        left: 15%;
+        background-color: #7638d3;
+        z-index: 10;
+        border-radius: 0px 0px 28px 28px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    header:hover {
+        background-color: #6723ce;
+        border-radius: 0px 0px 44px 44px;
+        transition: all 0.2s ease-in-out;
+        width: 68%;
+        left: 16%;
+    }
+
+    header:hover .logo {
+        transform: scale(0.39);
+        background-color: #6723ce !important;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .logo {
+        transform: scale(0.4);
+        background-color: #7638d3 !important;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .logo:hover {
+        transform: scale(0.39);
+        background-color: #6723ce !important;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .lineRight {
+        position: absolute;
+        top: 60%;
+        left: 0%;
+    }
+
+    .lineLeft {
+        position: absolute;
+        top: 60%;
+        right: 0%;
+    }
+
+    .calculateButton {
+        position: absolute;
+        top: 52.5%;
+        left: 2.5%;
+        border-radius: 6px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #7920ff;
+        background-color: #ceaffc;
+        height: 40px;
+        width: 130px;
+        transition: all 0.1s ease-in-out;
+        font-size: 17px;
+        font-family: Circular;
+        font-weight: 500;
+        color: #360580;
+        outline: none;
+    }
+
+    .calculateButton:hover {
+        background-color: #05ffa6;
+        border-radius: 16px;
+        transition: all 0.2s ease-in-out;
+        color: #023d28;
+        border-color: #023d28;
+        outline: none;
+    }
+
+    .resultOutput {
+        position: absolute;
+        top: 62.5%;
+        left: 2.5%;
+        border-radius: 6px;
+        border-style: none;
+        background-color: #ceaffc;
+        height: 40px;
+        width: 130px;
+        transition: all 0.1s ease-in-out;
+        outline: none;
+        font-family: Circular;
+        font-size: 19px;
+        font-weight: 400;
+        color: #360580;
+        text-indent: 10px;
+    }
+
+    .buttons {
+        position: fixed;
+        height: 80%;
+        width: 40%;
+        top: 10%;
+        left: 50%;
+    }
+
+    .text {
+        position: fixed;
+        height: 80%;
+        width: 40%;
+        top: 10%;
+        right: 50%;
+
+    }
+
+    input[type="checkbox"] {
+        display: none;
+        transition: all 0.15s ease-in-out;
+    }
+
+    input[type="checkbox"]+label::before {
+        position: absolute;
+        top: 45%;
+        left: 2.5%;
+        width: 25px;
+        height: 25px;
+        border-radius: 8px;
+        background-color: #ceaffc;
+        display: block;
+        content: "";
+        float: left;
+        margin-right: 5px;
+        transition: all 0.15s ease-in-out;
+    }
+
+    input[type="checkbox"]:checked+label::before {
+        box-shadow: inset 0px 0px 0px 4px #fff;
+        background-color: #05ffa6;
+        transition: all 0.15s ease-in-out;
+    }
+
+    .watchedText {
+        position: absolute;
+        background-color: none !important;
+        text-decoration: none !important;
+        top: 36.6%;
+        right: 2.5%;
+        color: #eadcff;
+        font-size: 18px;
+        font-family: 'Circular';
+        font-weight: 500;
+    }
+
+    .subscribedText {
+        position: absolute;
+        background-color: none !important;
+        text-decoration: none !important;
+        top: 45%;
+        right: 2.5%;
+        color: #eadcff;
+        font-size: 18px;
+        font-family: 'Circular';
+        font-weight: 500;
+    }
+
+    .resultText {
+        position: absolute;
+        background-color: none !important;
+        text-decoration: none !important;
+        top: 63.7%;
+        right: 2.5%;
+        color: #eadcff;
+        font-size: 18px;
+        font-family: 'Circular';
+        font-weight: 500;
+    }
+
+    .info {
+        position: absolute;
+        background-color: none !important;
+        text-decoration: none !important;
+        top: 70.2%;
+        right: -29%;
+        color: #eadcff;
+        font-size: 11px;
+        font-family: 'Circular';
+        font-weight: 400;
+        opacity: 24%;
+        text-align: center;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #eadcff;
+        cursor: pointer;
+    }
+
+    .div {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hoursInput {
+        position: absolute;
+        top: 35%;
+        left: 2.5%;
+        border-radius: 6px;
+        border-style: none;
+        background-color: #ceaffc;
+        height: 50px;
+        width: 130px;
+        transition: all 0.1s ease-in-out;
+        font-family: Circular;
+        font-size: 18px;
+        font-weight: 400;
+        color: #360580;
+        text-indent: 10px;
+    }
+
+    .hoursInput:focus {
+        outline: none;
+        border-style: none;
+        background-color: #dbc3ff;
+        transition: all 0.1s ease-in-out;
+    }
+</style>
+
+<script>
+    function calculate() {
+        var watchtime = document.getElementsByName('watchtime')[0].value;
+        var output = document.getElementById("output");
+
+        var dailyPoints = (120 * watchtime);
+        var claimPoints = (200 * watchtime);
+
+        if (watchtime <= 1) {
+            var streakPoints = 0;
+        } else if (watchtime == 2) {
+            var streakPoints = 300;
+        } else if (watchtime == 3) {
+            var streakPoints = 350;
+        } else if (watchtime == 4) {
+            var streakPoints = 400;
+        } else if (watchtime == 5) {
+            var streakPoints = 450;
+        } else {
+            var streakPoints = 1500 + (450 * (watchtime - 5));
+        }
+
+        var result = dailyPoints + claimPoints;
+
+        if (document.getElementById('sub').checked) {
+            output.value = (result * 2) + streakPoints * 0;
+        } else {
+            output.value = result + streakPoints * 0;
+        }
+    }
+</script>
+
+
+</html>
