@@ -4580,6 +4580,17 @@ window.matchMedia('(prefers-color-scheme:light)')
   if (source === null) {
     return
   }
+  
+  window.matchMedia('(prefers-color-scheme:dark)')
+.addListener((e) => {
+  if (! e.matches) {
+    return
+  }
+  const source = document.querySelector('link[rel*="icon",media="(prefers-color-scheme:dark)"]')
+
+  if (source === null) {
+    return
+  }
 
   link.setAttribute('type', source.type)
   link.setAttribute('href', source.href)
