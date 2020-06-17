@@ -1,8 +1,22 @@
 
 <html>
 <head>
-  <link rel="icon" media="(prefers-color-scheme:dark)" href="/Assets/faviconDnvieDark.png" type="image/png" />
-  <link rel="icon" media="(prefers-color-scheme:light)" href="/Assets/faviconDnvieLight.png" type="image/png" />  
+  <link rel="shortcut icon" id='favicon' href="/Assets/faviconDnvieLight.png" type="image/png" />
+  <script>
+      const usesDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || false;
+      const favicon = document.getElementById('favicon');
+
+      function switchIcon(usesDarkMode) {
+        if (usesDarkMode) { 
+          favicon.href = "/Assets/faviconDnvieDark.png";
+        } else {
+        favicon.href = "/Assets/faviconDnvieLight.png";
+        }
+      }
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener( "change", (e) => switchIcon(e.matches));
+      switchIcon(usesDarkMode);
+    </script>
 </head>
 <header>
   <div class="logo-container">
@@ -4558,53 +4572,6 @@ var BottomPageFour = window.innerHeight * 4;
   });
 
   
-  </script>
-    
-  <script>
-    
-    window.matchMedia('(prefers-color-scheme:light)').addListener((e) => {
-  e.matches 
-})
-      
- const favicon = document.createElement('link')
-link.setAttribute('rel', 'favicon icon')
-head.appendChild(link)
-
-
-window.matchMedia('(prefers-color-scheme:light)')
-.addListener((e) => {
-  if (! e.matches) {
-    return
-  }
-
-  const source = document.querySelector('link[rel*="icon",media="(prefers-color-scheme:light)"]')
-
-  if (source === null) {
-    return
-  }
-
-  link.setAttribute('type', source.type)
-  link.setAttribute('href', source.href)
-})
-    
-
-window.matchMedia('(prefers-color-scheme:dark)')
-.addListener((e) => {
-  if (! e.matches) {
-    return
-  }
-
-  const source = document.querySelector('link[rel*="icon",media="(prefers-color-scheme:dark)"]')
-
-  if (source === null) {
-    return
-  }
-
-  link.setAttribute('type', source.type)
-  link.setAttribute('href', source.href)
-})
-    
-    
   </script>
 
 </html>
