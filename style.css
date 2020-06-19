@@ -5,6 +5,25 @@
     overflow: hidden;
   }
 
+  .githubLogo {
+    position: fixed;
+    height: 3%;
+    width: 3%;
+    top: 3%;
+    right: 41.5%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .gitSVG {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .githubLogo:hover .gitSVG {
+    transform: scale(0.95);
+    opacity: 75%;
+    transition: all 0.2s ease-in-out;
+  }
+
   .one {
     top: 0vh;
     height: 100%;
