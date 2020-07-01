@@ -7,10 +7,10 @@
 <body>
     <header>
         <div class="nav">
-            <p>About Me</p>
-            <p>Skills</p>
-            <p>Experiences</p>
-            <p>More</p>
+            <p class="nav-link">About Me</p>
+            <p class="nav-link">Skills</p>
+            <p class="nav-link">Experiences</p>
+            <p class="nav-link">More</p>
         </div>
 
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
@@ -90,7 +90,7 @@
         <g id="Gruppe_9" data-name="Gruppe 9" transform="translate(332.326 1301.881)">
             <rect id="Rechteck_13" data-name="Rechteck 13" width="592" height="289" rx="16"
                 transform="translate(-0.326 -23.881)" fill="#1d1d1d" />
-            <text id="Language_Skills:" data-name="Language Skills:" transform="translate(32.674 40.119)" fill="#f2fbf7"
+            <text id="Language_Skills:" data-name="Language Skills:" transform="translate(32.674 40.119)" fill="#DFFECD"
                 font-size="27" font-family="Circular-Bold, Circular" font-weight="700">
                 <tspan x="0" y="0">Language Skills:</tspan>
             </text>
@@ -193,7 +193,7 @@
                 font-family="Circular-Medium, Circular" font-weight="500">
                 <tspan x="0" y="0">5/10</tspan>
             </text>
-            <text id="Skills:" transform="translate(27.87 80.119)" fill="#f2fbf7" font-size="27"
+            <text id="Skills:" transform="translate(27.87 80.119)" fill="#DFFECD" font-size="27"
                 font-family="Circular-Bold, Circular" font-weight="700">
                 <tspan x="0" y="0">Skills:</tspan>
             </text>
@@ -202,7 +202,7 @@
             <g id="Gruppe_1307" data-name="Gruppe 1307" transform="translate(332.13 2017.881)">
                 <rect id="Rechteck_14-2" data-name="Rechteck 14" width="587" height="289" rx="16"
                     transform="translate(-0.13 16.119)" fill="#1d1d1d" />
-                <text id="Experiences:" transform="translate(27.87 80.119)" fill="#f2fbf7" font-size="27"
+                <text id="Experiences:" transform="translate(27.87 80.119)" fill="#DFFECD" font-size="27"
                     font-family="Circular-Bold, Circular" font-weight="700">
                     <tspan x="0" y="0">Experiences:</tspan>
                 </text>
@@ -243,7 +243,7 @@
             <g id="Gruppe_1307-2" data-name="Gruppe 1307" transform="translate(332.13 2017.881)">
                 <rect id="Rechteck_14-3" data-name="Rechteck 14" width="587" height="289" rx="16"
                     transform="translate(-0.13 16.119)" fill="#1d1d1d" />
-                <text id="Projects:" transform="translate(27.87 80.119)" fill="#f2fbf7" font-size="27"
+                <text id="Projects:" transform="translate(27.87 80.119)" fill="#DFFECD" font-size="27"
                     font-family="Circular-Bold, Circular" font-weight="700">
                     <tspan x="0" y="0">Projects:</tspan>
                 </text>
@@ -290,6 +290,15 @@
         transition: all 0.25s ease-in-out;
     }
 
+    ::selection {
+        background: #000000;
+    }
+
+    ::-moz-selection {
+        background: #000000;
+    }
+
+
     body {
         background-color: #0F0F0F;
         overflow-x: hidden;
@@ -322,25 +331,51 @@
         background-color: none;
     }
 
+    .nav-link {
+        padding-top: 7px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
+        border-radius: 8px;
+        background-color: none;
+    }
+
+    .nav-link:hover {
+        color: #40F3BD;
+        transition: all 0.2s ease-out;
+        background-color: #dffecd10;
+        transform: translateY(-1px);
+    }
+
     .logo {
         position: absolute;
         top: 60%;
         left: 5%;
-        height: 47%;
+        height: 50%;
         width: auto;
+    }
+
+    .logo:hover {
+        transform: translateY(-1px);
+        opacity: 70%;
     }
 
     .githubLogo {
         position: absolute;
-        top: 60%;
+        top: 65%;
         right: 2%;
-        height: 40%;
+        height: 37%;
         width: auto;
+    }
+
+    .githubLogo:hover {
+        transform: translateY(-1px);
+        opacity: 70%;
     }
 
     .CirlceUpLeft {
         position: absolute;
-        top: -20%;
+        top: -16%;
         left: -5%;
         height: 40%;
         width: auto;
@@ -372,5 +407,9 @@
         width: 60%;
     }
 </style>
+
+<script>
+
+</script>
 
 </html>
