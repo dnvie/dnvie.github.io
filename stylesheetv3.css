@@ -397,82 +397,7 @@
         }
     }
 
-    @media only screen and (max-width: 850px) {
-
-        .nav {
-            width: 60%;
-            height: 80px;
-            left: 20%;
-            transform: scale(0.7);
-        }
-
-        .logo {
-            height: 25%;
-        }
-
-        .githubLogo {
-            transform: scale(0.76);
-        }
-
-        .CirlceUpLeft {
-            position: absolute;
-            top: -12%;
-            left: -10%;
-            height: 40%;
-            width: auto;
-            z-index: 6;
-            transform: scale(0.6);
-        }
-
-        .CircleMiddleRight {
-            position: absolute;
-            top: 59%;
-            right: -12%;
-            height: 100%;
-            width: auto;
-            z-index: 0;
-            transform: scale(0.8);
-        }
-
-        .CircleBottomLeft {
-           display: none;
-            position: absolute;
-            top: 155%;
-            left: -60%;
-            height: 100%;
-            width: auto;
-            overflow: hidden;
-            z-index: 0;
-            transform: scale(0.8);
-        }
-
-        .AboutMe {
-            position: absolute;
-            top: 37%;
-            right: 25%;
-            height: auto;
-            width: 50%;
-        }
-
-        .GroupSVG {
-            position: absolute;
-            top: 110%;
-            right: 2.5%;
-            height: auto;
-            width: 95%;
-        }
-
-        .page3SVG {
-            position: absolute;
-            top: 205%;
-            right: 12.5%;
-            height: auto;
-            width: 75%;
-        }
-    }
-
-
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 850px) {
 
     body {
         height: 370%;
@@ -578,7 +503,5 @@ width: 50%;
         background-color: none;
         z-index: -1;
     }
-
-
     }
 
