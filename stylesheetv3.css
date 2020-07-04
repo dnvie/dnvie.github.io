@@ -31,22 +31,6 @@
         text-decoration: none !important;
     }
 
-    .svg1:hover {
-        opacity: 80%;
-    }
-
-    .svg2:hover {
-        opacity: 80%;
-    }
-
-    .svg3:hover {
-        opacity: 80%;
-    }
-
-    .svg4:hover {
-        opacity: 80%;
-    }
-
     a:link {
         text-decoration: none !important;
     }
@@ -127,7 +111,7 @@
         right: -30%;
         height: 100%;
         width: auto;
-        z-index: 6;
+        z-index: 0;
 
     }
 
@@ -141,10 +125,60 @@
         z-index: 6;
     }
 
+    .page1 {
+        position: absolute;
+        left: 10%;
+        top: 0%;
+        width: 1%;
+        height: 1%;
+        background-color: none;
+        z-index: -1;
+    }
+
+    .page1scrollIndicator {
+        position: absolute;
+        left: 40%;
+        top: 45%;
+        width: 1%;
+        height: 1%;
+        background-color: none;
+        z-index: -1;
+    }
+
+    .page2scrollIndicator {
+        position: absolute;
+        left: 50%;
+        top: 140%;
+        width: 1%;
+        height: 1%;
+        background-color: none;
+        z-index: -1;
+    }
+
+    .page3scrollIndicator {
+        position: absolute;
+        left: 40%;
+        bottom: -125%;
+        width: 1%;
+        height: 1%;
+        background-color: none;
+        z-index: -1;
+    }
+
     .page2 {
         position: absolute;
         left: 10%;
         top: 90%;
+        width: 1%;
+        height: 1%;
+        background-color: none;
+        z-index: -1;
+    }
+
+    .page3 {
+        position: absolute;
+        right: 10%;
+        bottom: -170%;
         width: 1%;
         height: 1%;
         background-color: none;
@@ -193,4 +227,169 @@
         background-color: #dffecd10;
         transform: translateY(-1px);
         opacity: 100%;
+    }
+
+    .active {
+        padding-top: 7px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
+        border-radius: 8px;
+        background-color: rgb(59, 59, 59);
+        text-decoration: none !important;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        .nav {
+            width: 40%;
+            height: 80px;
+            left: 31%;
+            transform: scale(0.9);
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            height: 35%;
+            width: auto;
+        }
+
+        .githubLogo {
+            transform: scale(0.8);
+            right: -5%;
+        }
+
+        .CirlceUpLeft {
+            position: absolute;
+            top: -12%;
+            left: -7%;
+            height: 40%;
+            width: auto;
+            z-index: 6;
+            transform: scale(0.7);
+        }
+
+        .CircleMiddleRight {
+            position: absolute;
+            top: 50%;
+            right: -45%;
+            height: 100%;
+            width: auto;
+            z-index: 0;
+            transform: scale(0.9);
+        }
+
+        .CircleBottomLeft {
+            position: absolute;
+            top: 155%;
+            left: -40%;
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+            z-index: 6;
+            transform: scale(0.9);
+        }
+
+        .AboutMe {
+            position: absolute;
+            top: 37%;
+            right: 27%;
+            height: auto;
+            width: 40%;
+        }
+
+        .GroupSVG {
+            position: absolute;
+            top: 110%;
+            right: 16.5%;
+            height: auto;
+            width: 66%;
+        }
+
+        .page3SVG {
+            position: absolute;
+            top: 205%;
+            right: 20%;
+            height: auto;
+            width: 57%;
+        }
+    }
+
+    @media only screen and (max-width: 1050px) {
+
+        .nav {
+            width: 50%;
+            height: 80px;
+            left: 29%;
+            transform: scale(0.8);
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            height: 30%;
+            width: auto;
+        }
+
+        .githubLogo {
+            transform: scale(0.8);
+            right: -8%;
+        }
+
+        .CirlceUpLeft {
+            position: absolute;
+            top: -12%;
+            left: -7%;
+            height: 40%;
+            width: auto;
+            z-index: 6;
+            transform: scale(0.8);
+        }
+
+        .CircleMiddleRight {
+            position: absolute;
+            top: 55%;
+            right: -60%;
+            height: 100%;
+            width: auto;
+            z-index: 0;
+            transform: scale(0.8);
+        }
+
+        .CircleBottomLeft {
+            position: absolute;
+            top: 155%;
+            left: -40%;
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+            z-index: 6;
+            transform: scale(0.8);
+        }
+
+        .AboutMe {
+            position: absolute;
+            top: 37%;
+            right: 25%;
+            height: auto;
+            width: 40%;
+        }
+
+        .GroupSVG {
+            position: absolute;
+            top: 110%;
+            right: 8%;
+            height: auto;
+            width: 75%;
+        }
+
+        .page3SVG {
+            position: absolute;
+            top: 205%;
+            right: 12%;
+            height: auto;
+            width: 70%;
+        }
     }
