@@ -351,6 +351,7 @@
         }
 
         .CircleMiddleRight {
+           display: none;
             position: absolute;
             top: 55%;
             right: -10%;
@@ -434,6 +435,7 @@
         }
 
         .CircleBottomLeft {
+           display: none;
             position: absolute;
             top: 155%;
             left: -60%;
