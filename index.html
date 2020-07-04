@@ -5,6 +5,35 @@
     <link rel="stylesheet" href="/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="/app.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="lx_apfy7kMuTy5qH64dz_GHbdz0YjHvdq1ZwOLXMPVY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="dnive Personal Website">
+    <meta name="keywords" content="Daniel Nikbakht, dnvie">
+     <meta name="author" content="Daniel Nikbakht">
+     <meta property="og:title" content="dnvie Website"/>
+    <meta property="og:description" content="dnvie's Website">
+    <meta property="og:type" content="website">
+    <meta property=“og:image“ content=“/Assets/dnvieLOGO2.jpg“>
+    <meta property=“og:site_name“ content=“dnvie“>
+    <title>dnvie</title>
+    <link rel="shortcut icon" id='favicon' href="/Assets/faviconDnvieLight.png" type="image/png" />
+    <script>
+    const usesDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || false;
+    const favicon = document.getElementById('favicon');
+
+    function switchIcon(usesDarkMode) {
+      if (usesDarkMode) {
+        favicon.href = "/Assets/faviconDnvieDark.png";
+      } else {
+        favicon.href = "/Assets/faviconDnvieLight.png";
+      }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", (e) => switchIcon(e.matches));
+    switchIcon(usesDarkMode);
+  </script>
 </head>
 
 <body>
