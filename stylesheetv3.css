@@ -1,3 +1,43 @@
+    @font-face {
+        font-family: 'Circular';
+        src: url(./Assets/Circular%20Medium.ttf);
+        font-style: normal;
+        font-weight: medium;
+    }
+
+    @font-face {
+        font-family: 'CircularB';
+        src: url(./Assets/Circular%20Book.ttf);
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Circular';
+        src: url(./Assets/Circular%20Bold.ttf);
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: 'Circular';
+        src: url(./Assets/Circular%20Black.ttf);
+        font-style: normal;
+        font-weight: bolder;
+    }
+
+    @keyframes fade-in-right {
+        from {
+            opacity: 0;
+            transform: translateX(-15px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
     * {
         transition: all 0.25s ease-in-out;
         scroll-behavior: smooth;
@@ -31,6 +71,9 @@
         z-index: 5;
         padding-bottom: 20px;
         text-decoration: none !important;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.3s;
     }
 
     a:link {
@@ -106,6 +149,9 @@
         width: auto;
         z-index: 6;
         overflow: hidden;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.4s;
     }
 
     .CircleMiddleRight {
@@ -116,6 +162,9 @@
         width: auto;
         z-index: 0;
         overflow: hidden;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.6s;
     }
 
     .CircleBottomLeft {
@@ -126,6 +175,9 @@
         width: auto;
         overflow: hidden;
         z-index: 0;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.7s;
     }
 
     .page1 {
@@ -194,6 +246,9 @@
         right: 35%;
         height: auto;
         width: 30%;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.5s;
     }
 
     .GroupSVG {
@@ -202,6 +257,9 @@
         right: 20%;
         height: auto;
         width: 60%;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.8s;
     }
 
     .page3SVG {
@@ -210,6 +268,9 @@
         right: 25%;
         height: auto;
         width: 50%;
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.9s;
     }
 
     .scrolledNav {
@@ -351,7 +412,6 @@
         }
 
         .CircleMiddleRight {
-           display: none;
             position: absolute;
             top: 55%;
             right: -10%;
@@ -397,111 +457,184 @@
         }
     }
 
-@media only screen and (max-width: 850px) {
+    @media only screen and (max-width: 850px) {
 
-    body {
-        height: 370%;
+        .nav {
+            width: 60%;
+            height: 80px;
+            left: 20%;
+            transform: scale(0.7);
+        }
+
+        .logo {
+            height: 25%;
+        }
+
+        .githubLogo {
+            transform: scale(0.76);
+        }
+
+        .CirlceUpLeft {
+            position: absolute;
+            top: -12%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+            z-index: 6;
+            transform: scale(0.6);
+        }
+
+        .CircleMiddleRight {
+            position: absolute;
+            top: 59%;
+            right: -12%;
+            height: 100%;
+            width: auto;
+            z-index: 0;
+            transform: scale(0.8);
+        }
+
+        .CircleBottomLeft {
+            position: absolute;
+            top: 155%;
+            left: -60%;
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+            z-index: 0;
+            transform: scale(0.8);
+        }
+
+        .AboutMe {
+            position: absolute;
+            top: 37%;
+            right: 25%;
+            height: auto;
+            width: 50%;
+        }
+
+        .GroupSVG {
+            position: absolute;
+            top: 110%;
+            right: 2.5%;
+            height: auto;
+            width: 95%;
+        }
+
+        .page3SVG {
+            position: absolute;
+            top: 205%;
+            right: 12.5%;
+            height: auto;
+            width: 75%;
+        }
     }
 
-.nav {
-width: 100%;
-height: 80px;
-left: 0%;
-transform: scale(0.8);
-}
 
-.logo {
-display: none;
-}
+    @media only screen and (max-width: 840px) {
 
-.githubLogo {
-    display: none;
-}
+        body {
+            height: 370%;
+        }
 
-.CirlceUpLeft {
-position: absolute;
-top: -12%;
-left: -20%;
-height: 40%;
-width: auto;
-z-index: 6;
-transform: scale(0.6);
-}
+        .nav {
+            width: 100%;
+            height: 80px;
+            left: 0%;
+            transform: scale(0.8);
+        }
 
-.CircleMiddleRight {
-position: absolute;
-top: 59%;
-right: -12%;
-height: 100%;
-width: auto;
-z-index: 0;
-transform: scale(0.8);
-}
+        .logo {
+            display: none;
+        }
 
-.CircleBottomLeft {
-position: absolute;
-top: 155%;
-left: -120%;
-height: 100%;
-width: auto;
-overflow: hidden;
-z-index: 0;
-transform: scale(0.3);
-}
+        .githubLogo {
+            display: none;
+        }
 
-.AboutMe {
-position: absolute;
-top: 37%;
-right: 20%;
-height: auto;
-width: 60%;
-}
+        .CirlceUpLeft {
+            position: absolute;
+            top: -12%;
+            left: -20%;
+            height: 40%;
+            width: auto;
+            z-index: 6;
+            transform: scale(0.6);
+        }
 
-.GroupSVG {
-display: none;
-}
+        .CircleMiddleRight {
+            position: absolute;
+            top: 59%;
+            right: -12%;
+            height: 100%;
+            width: auto;
+            z-index: 0;
+            transform: scale(0.8);
+        }
 
-.page3SVG {
-display: none; 
-}
+        .CircleBottomLeft {
+            position: absolute;
+            top: 155%;
+            left: -120%;
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+            z-index: 0;
+            transform: scale(0.3);
+        }
 
-.GroupSVGMobile {
-    display: block;
-position: absolute;
-top: 120%;
-right: 10%;    
-height: auto;
-width: 80%;
-z-index: 2;
-}
+        .AboutMe {
+            position: absolute;
+            top: 37%;
+            right: 20%;
+            height: auto;
+            width: 60%;
+        }
 
-.page3SVGMobile {
-    display: block;
-position: absolute;
-top: 270%;
-right: 25%;
-height: auto;
-width: 50%;
-}
+        .GroupSVG {
+            display: none;
+        }
 
-.page2scrollIndicator {
-        position: absolute;
-        left: 50%;
-        top: 190%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
+        .page3SVG {
+            display: none;
+        }
+
+        .GroupSVGMobile {
+            display: block;
+            position: absolute;
+            top: 120%;
+            right: 10%;
+            height: auto;
+            width: 80%;
+            z-index: 2;
+        }
+
+        .page3SVGMobile {
+            display: block;
+            position: absolute;
+            top: 270%;
+            right: 25%;
+            height: auto;
+            width: 50%;
+        }
+
+        .page2scrollIndicator {
+            position: absolute;
+            left: 50%;
+            top: 190%;
+            width: 1%;
+            height: 1%;
+            background-color: none;
+            z-index: -1;
+        }
+
+        .page3scrollIndicator {
+            position: absolute;
+            left: 40%;
+            bottom: -200%;
+            width: 1%;
+            height: 1%;
+            background-color: none;
+            z-index: -1;
+        }
     }
-
-    .page3scrollIndicator {
-        position: absolute;
-        left: 40%;
-        bottom: -200%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-    }
-
