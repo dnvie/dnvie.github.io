@@ -1,0 +1,196 @@
+* {
+        transition: all 0.25s ease-in-out;
+        scroll-behavior: smooth;
+    }
+
+    ::selection {
+        background: #000000;
+    }
+
+    ::-moz-selection {
+        background: #000000;
+    }
+
+
+    body {
+        background-color: #0F0F0F;
+        overflow-x: hidden;
+        width: 100%;
+        height: 270%;
+    }
+
+    header {
+        position: sticky;
+        top: -5%;
+        left: 0%;
+        width: 100%;
+        height: 110px;
+        background-color: #0F0F0F;
+        z-index: 5;
+        padding-bottom: 20px;
+        text-decoration: none !important;
+    }
+
+    .svg1:hover {
+        opacity: 80%;
+    }
+
+    .svg2:hover {
+        opacity: 80%;
+    }
+
+    .svg3:hover {
+        opacity: 80%;
+    }
+
+    .svg4:hover {
+        opacity: 80%;
+    }
+
+    a:link {
+        text-decoration: none !important;
+    }
+
+    a {
+        color: #F2FBF7;
+    }
+
+    a:hover {
+        color: #40F3BD;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        height: 80px;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        color: #F2FBF7;
+        font-family: Circular;
+        font-size: 20px;
+        background-color: none;
+        text-decoration: none !important;
+    }
+
+    .nav-link {
+        padding-top: 7px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
+        border-radius: 8px;
+        background-color: none;
+        text-decoration: none !important;
+    }
+
+    .nav-link:hover {
+        color: #40F3BD;
+        transition: all 0.2s ease-out;
+        background-color: #dffecd10;
+        transform: translateY(-1px);
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        height: 35%;
+        width: auto;
+    }
+
+    .githubLogo {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        height: 35%;
+        width: auto;
+    }
+
+    .githubLogo:hover {
+        transform: translateY(-1px);
+        opacity: 70%;
+    }
+
+    .CirlceUpLeft {
+        position: absolute;
+        top: -16%;
+        left: -5%;
+        height: 40%;
+        width: auto;
+        z-index: 6;
+    }
+
+    .CircleMiddleRight {
+        position: absolute;
+        top: 45%;
+        right: -30%;
+        height: 100%;
+        width: auto;
+        z-index: 6;
+
+    }
+
+    .CircleBottomLeft {
+        position: absolute;
+        top: 155%;
+        left: -40%;
+        height: 100%;
+        width: auto;
+        overflow: hidden;
+        z-index: 6;
+    }
+
+    .page2 {
+        position: absolute;
+        left: 10%;
+        top: 90%;
+        width: 1%;
+        height: 1%;
+        background-color: none;
+        z-index: -1;
+    }
+
+    .AboutMe {
+        position: absolute;
+        top: 37%;
+        right: 35%;
+        height: auto;
+        width: 30%;
+    }
+
+    .GroupSVG {
+        position: absolute;
+        top: 110%;
+        right: 20%;
+        height: auto;
+        width: 60%;
+    }
+
+    .page3SVG {
+        position: absolute;
+        top: 205%;
+        right: 25%;
+        height: auto;
+        width: 50%;
+    }
+
+    .scrolledNav {
+        padding-top: 7px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
+        border-radius: 8px;
+        background-color: none;
+        text-decoration: none !important;
+        opacity: 25%;
+        transform: scale(0.9);
+    }
+
+    .scrolledNav:hover {
+        color: #40F3BD;
+        transition: all 0.2s ease-out;
+        background-color: #dffecd10;
+        transform: translateY(-1px);
+        opacity: 100%;
+    }
