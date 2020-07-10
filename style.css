@@ -46,7 +46,8 @@
         height: 270%;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        cursor: url("https://dnvie.github.io/Assets/cursorDEFAULT.svg"), default;
+        cursor: url("https://dnvie.github.io/Assets/cursorDEFAULT.png"), default;
+        cursor: url("https://dnvie.github.io/Assets/cursorSELECT.png"), pointer;
     }
 
     header {
