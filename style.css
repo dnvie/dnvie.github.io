@@ -70,7 +70,7 @@
         z-index: 5;
         padding-bottom: 20px;
         text-decoration: none !important;
-        animation: fade-in-right1 ease 0.5s forwards;
+        animation: fade-in-right ease 0.5s forwards;
         opacity: 0%;
         animation-delay: 0.3s;
     }
