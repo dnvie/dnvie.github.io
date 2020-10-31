@@ -1,13 +1,13 @@
     @font-face {
         font-family: 'Circular';
-        src: url("https://dnvie.github.io/Assets/Circular%20Book.ttf");
+        src: url("/Assets/Circular%20Book.ttf");
         font-style: normal;
         font-weight: medium;
     }
 
     @font-face {
         font-family: 'Circular';
-        src: url("https://dnvie.github.io/Assets/Circular%20Bold.ttf");
+        src: url("/Assets/Circular%20Bold.ttf");
         font-style: normal;
         font-weight: bold;
     }
@@ -46,7 +46,7 @@
         height: 270%;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        cursor: url("https://dnvie.github.io/Assets/cursorDEFAULT.png"), auto;
+        cursor: url("/Assets/cursorDEFAULT.png"), auto;
     }
 
     header {
@@ -56,6 +56,8 @@
         width: 100%;
         height: 110px;
         background-color: #0F0F0F;
+        opacity: 85%;
+        filter: blur(5px);
         z-index: 5;
         padding-bottom: 20px;
         text-decoration: none !important;
