@@ -283,8 +283,8 @@
         border-radius: 8px;
         background-color: none;
         text-decoration: none !important;
-        opacity: 25%;
-        transform: scale(0.9);
+        opacity: 37%;
+        transform: scale(0.93);
     }
 
     .scrolledNav:hover {
