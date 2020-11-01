@@ -66,7 +66,7 @@
         left: 0%;
         width: 100%;
         height: 110px;
-        background-color: #0F0F0F;
+        backdrop-filter: saturate(230%) blur(23px);
         z-index: 5;
         padding-bottom: 20px;
         text-decoration: none !important;
