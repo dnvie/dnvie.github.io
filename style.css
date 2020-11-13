@@ -68,6 +68,7 @@
         height: 110px;
         background-color: #0F0F0F85;
         backdrop-filter: saturate(230%) blur(23px);
+        -webkit-backdrop-filter: saturate(230%) blur(23px);
         z-index: 5;
         padding-bottom: 20px;
         text-decoration: none !important;
