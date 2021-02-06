@@ -89,6 +89,10 @@
         color: #40F3BD;
     }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
     .nav {
         display: flex;
         justify-content: space-between;
