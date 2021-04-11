@@ -246,10 +246,10 @@
 
     .AboutMe {
         position: absolute;
-        top: 32%;
-        right: 25%;
-        height: 36%;
-        width: 50%;
+        top: 20%;
+        right: 20%;
+        height: 60%;
+        width: 60%;
         animation: fade-in-right ease 0.5s forwards;
         opacity: 0%;
         animation-delay: 0.5s;
