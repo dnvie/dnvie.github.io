@@ -255,6 +255,22 @@
         animation-delay: 0.5s;
     }
 
+    #PiRechteck:hover { 
+        opacity: 70%;
+    }
+
+    #CovidRechteck:hover {
+        opacity: 70%;
+    }
+
+    #GitHubRechteck:hover {
+        opacity: 70%;
+    }
+
+    #WeatherRechteck:hover {
+        opacity: 70%;
+    }
+
     .GroupSVG {
         position: absolute;
         top: 110%;
