@@ -161,8 +161,8 @@
     .CircleMiddleRight {
         position: absolute;
         top: 45%;
-        right: 0%;
-        height: 100%;
+        right: -5%;
+        height: 70%;
         width: auto;
         z-index: 0;
         overflow: hidden;
