@@ -637,7 +637,7 @@
         .page3SVGMobile {
             display: block;
             position: absolute;
-            top: 180%;
+            top: 210%;
             right: 25%;
             height: auto;
             width: 50%;
@@ -646,7 +646,7 @@
         .page2scrollIndicator {
             position: absolute;
             left: 50%;
-            top: 190%;
+            top: 120%;
             width: 1%;
             height: 1%;
             background-color: none;
@@ -656,7 +656,7 @@
         .page3scrollIndicator {
             position: absolute;
             left: 40%;
-            bottom: -200%;
+            top: 200%;
             width: 1%;
             height: 1%;
             background-color: none;
