@@ -554,7 +554,7 @@
     @media only screen and (max-width: 840px) {
 
         body {
-            height: 250%;
+            height: 210%;
             overflow-x: hidden !important; 
         }
 
@@ -584,13 +584,7 @@
         }
 
         .CircleMiddleRight {
-            position: absolute;
-            top: 50%;
-            right: -30%;
-            height: 60%;
-            width: auto;
-            z-index: 0;
-            transform: scale(0.7);
+            display:none;
         }
 
         .CircleBottomLeft {
@@ -633,7 +627,7 @@
         .GroupSVGMobile {
             display: block;
             position: absolute;
-            top: 100%;
+            top: 85%;
             right: 10%;
             height: auto;
             width: 80%;
@@ -643,7 +637,7 @@
         .page3SVGMobile {
             display: block;
             position: absolute;
-            top: 200%;
+            top: 180%;
             right: 25%;
             height: auto;
             width: 50%;
