@@ -255,9 +255,6 @@
         animation-delay: 0.5s;
     }
 
-    .AboutMeMobile {
-        display: none;
-
     #PiRechteck:hover { 
         opacity: 70%;
     }
@@ -603,6 +600,11 @@
 
         .AboutMe {
             display: none;
+            position: absolute;
+            top: 37%;
+            right: 20%;
+            height: auto;
+            width: 60%;
         }
 
         .AboutMeMobile {
@@ -612,7 +614,6 @@
             width: 80%;
             display: block;
             position: absolute;
-            animation: fade-in-right ease 0.5s forwards;
         }
 
         .GroupSVG {
@@ -636,7 +637,7 @@
         .page3SVGMobile {
             display: block;
             position: absolute;
-            top: 210%;
+            top: 180%;
             right: 25%;
             height: auto;
             width: 50%;
@@ -645,7 +646,7 @@
         .page2scrollIndicator {
             position: absolute;
             left: 50%;
-            top: 120%;
+            top: 190%;
             width: 1%;
             height: 1%;
             background-color: none;
@@ -655,7 +656,7 @@
         .page3scrollIndicator {
             position: absolute;
             left: 40%;
-            top: 200%;
+            bottom: -200%;
             width: 1%;
             height: 1%;
             background-color: none;
