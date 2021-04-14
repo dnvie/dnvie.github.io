@@ -41,12 +41,12 @@ $(window).on('resize scroll', function() {
     } else if ($('#page3scrollIndicator').isInViewport() && !$('#page2scrollIndicator').isInViewport()){
         document.getElementById("nav-link1").classList.remove("active");
         document.getElementById("nav-link2").classList.remove("active");
-        document.getElementById("nav-link3").classList.remove("active");
+        document.getElementById("nav-link3").classList.add("active");
         document.getElementById("nav-link4").classList.add("active");
     } else {
         document.getElementById("nav-link1").classList.remove("active");
         document.getElementById("nav-link2").classList.add("active");
-        document.getElementById("nav-link3").classList.add("active");
+        document.getElementById("nav-link3").classList.remove("active");
         document.getElementById("nav-link4").classList.remove("active");
     }
 });
