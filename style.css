@@ -255,6 +255,9 @@
         animation-delay: 0.5s;
     }
 
+    .AboutMeMobile {
+        display: none;
+
     #PiRechteck:hover { 
         opacity: 70%;
     }
