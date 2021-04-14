@@ -558,7 +558,7 @@
     @media only screen and (max-width: 840px) {
 
         body {
-            height: 210%;
+            height: 240%;
             overflow-x: hidden !important; 
         }
 
@@ -604,11 +604,6 @@
 
         .AboutMe {
             display: none;
-            position: absolute;
-            top: 37%;
-            right: 20%;
-            height: auto;
-            width: 60%;
         }
 
         .AboutMeMobile {
@@ -618,6 +613,7 @@
             width: 80%;
             display: block;
             position: absolute;
+            animation: fade-in-right ease 0.5s forwards;
         }
 
         .GroupSVG {
@@ -636,6 +632,7 @@
             height: auto;
             width: 80%;
             z-index: 2;
+            animation: fade-in-right ease 0.6s forwards;
         }
 
         .page3SVGMobile {
@@ -645,6 +642,7 @@
             right: 25%;
             height: auto;
             width: 50%;
+            animation: fade-in-right ease 0.7s forwards;
         }
 
         .page2scrollIndicator {
