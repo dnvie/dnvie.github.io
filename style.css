@@ -600,11 +600,6 @@
 
         .AboutMe {
             display: none;
-            position: absolute;
-            top: 37%;
-            right: 20%;
-            height: auto;
-            width: 60%;
         }
 
         .AboutMeMobile {
@@ -614,6 +609,7 @@
             width: 80%;
             display: block;
             position: absolute;
+            animation: fade-in-right ease 0.5s forwards;
         }
 
         .GroupSVG {
