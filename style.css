@@ -244,19 +244,82 @@
         z-index: -1;
     }
 
-    .AboutMe {
+    .Main {
+        height: 50%;
+        width: 50%;
         position: absolute;
-        top: 20%;
-        right: 20%;
-        height: 60%;
-        width: 60%;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.5s;
+        top: 25%;
+        left: 25%;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centering y-axis */
+        align-items: center;
+        /* Centering x-axis */
     }
-
-    .AboutMeMobile {
-        display: none;
+    
+    img {
+        max-height: auto;
+        min-height: auto;
+        max-width: 80%;
+        min-width: 80%;
+        width: 80%;
+        height: auto;
+        z-index: 10;
+    }
+    
+    #test {
+        position: absolute;
+        top: 63%;
+        left: 11%;
+        max-height: auto;
+        min-height: auto;
+        max-width: 25%;
+        min-width: 25%;
+        width: 25%;
+        height: auto;
+    }
+    
+    #test2 {
+        position: absolute;
+        bottom: 65%;
+        right: 8%;
+        max-height: auto;
+        min-height: auto;
+        max-width: 30%;
+        min-width: 30%;
+        width: 30%;
+        height: auto;
+    }
+    
+    @keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes expand {
+        0% {
+            -webkit-transform: scale(1);
+        }
+        50% {
+            -webkit-transform: scale(1.4);
+        }
+        100% {
+            -webkit-transform: scale(1);
+        }
+    }
+    
+    .rotating {
+        animation: rotating 14s linear infinite;
+    }
+    
+    .expand {
+        animation: expand 5s linear infinite;
     }
 
     #PiRechteck:hover { 
