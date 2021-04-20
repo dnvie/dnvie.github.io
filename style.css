@@ -257,6 +257,9 @@
         /* Centering y-axis */
         align-items: center;
         /* Centering x-axis */
+        animation: fade-in-right ease 0.5s forwards;
+        opacity: 0%;
+        animation-delay: 0.5s;
     }
     
     img {
