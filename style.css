@@ -4,65 +4,61 @@
         font-style: normal;
         font-weight: medium;
     }
-
+    
     @font-face {
         font-family: 'Circular';
         src: url("/Assets/Circular%20Bold.ttf");
         font-style: normal;
         font-weight: bold;
     }
-
+    
     @keyframes fade-in-right {
         from {
             opacity: 0;
             transform: translateX(-15px);
         }
-
         to {
             opacity: 1;
             transform: translateX(0);
         }
     }
-
-@keyframes fade-in-right2 {
+    
+    @keyframes fade-in-right2 {
         from {
             opacity: 0;
             transform: translateX(-15px);
         }
-
         to {
             opacity: 0.8;
             transform: translateX(0);
         }
     }
-
+    
     * {
         transition: all 0.25s ease-in-out;
         scroll-behavior: smooth;
     }
-
-    ::selection {
+    
+     ::selection {
         background: #000000;
     }
-
-    ::-moz-selection {
+    
+     ::-moz-selection {
         background: #000000;
     }
-
-
+    
     body {
         background-color: #0F0F0F;
-        overflow-x: hidden;
+        overflow: hidden;
         width: 100%;
-        height: 270%;
+        height: 100%;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        cursor: url("/Assets/cursorDEFAULT.png"), auto;
     }
-
+    
     header {
         position: sticky;
-        top: -5%;
+        top: 0%;
         left: 0%;
         width: 100%;
         height: 110px;
@@ -76,19 +72,7 @@
         opacity: 0%;
         animation-delay: 0.3s;
     }
-
-    a:link {
-        text-decoration: none !important;
-    }
-
-    a {
-        color: #F2FBF7;
-    }
-
-    a:hover {
-        color: #40F3BD;
-    }
-
+    
     .nav {
         display: flex;
         justify-content: space-between;
@@ -98,30 +82,18 @@
         top: 35%;
         left: 35%;
         color: #F2FBF7;
-        opacity: 85%;
+        background-color: #0F0F0F85;
+        backdrop-filter: saturate(230%) blur(23px);
+        -webkit-backdrop-filter: saturate(230%) blur(23px);
+        border-radius: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
         font-family: Circular;
         font-size: 20px;
-        background-color: none;
         text-decoration: none !important;
+        opacity: 85%;
     }
-
-    .nav-link {
-        padding-top: 7px;
-        padding-left: 14px;
-        padding-right: 14px;
-        padding-bottom: 14px;
-        border-radius: 8px;
-        background-color: none;
-        text-decoration: none !important;
-    }
-
-    .nav-link:hover {
-        color: #40F3BD;
-        transition: all 0.2s ease-out;
-        background-color: #dffecd10;
-        transform: translateY(-1px);
-    }
-
+    
     .logo {
         position: absolute;
         top: 50%;
@@ -131,7 +103,7 @@
         backdrop-filter: blur(10px);
         width: auto;
     }
-
+    
     .githubLogo {
         position: absolute;
         top: 50%;
@@ -139,12 +111,12 @@
         height: 35%;
         width: auto;
     }
-
+    
     .githubLogo:hover {
         transform: translateY(-1px);
         opacity: 70%;
     }
-
+    
     .CirlceUpLeft {
         position: absolute;
         top: -16%;
@@ -156,8 +128,9 @@
         animation: fade-in-right ease 0.5s forwards;
         opacity: 0%;
         animation-delay: 0.4s;
+        user-select: none;
     }
-
+    
     .CircleMiddleRight {
         position: absolute;
         top: 45%;
@@ -170,237 +143,29 @@
         opacity: 0%;
         animation-delay: 0.6s;
     }
-
-    .CircleBottomLeft {
+    
+    #wip {
         position: absolute;
-        top: 155%;
-        left: -40%;
+        width: 100%;
         height: 100%;
-        width: auto;
-        overflow: hidden;
-        z-index: 0;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.7s;
+        left: 0;
+        top: 0;
+        user-select: none;
+        text-align: center;
+        font-family: 'Circular';
+        font-size: 4rem;
+        color: white;
     }
-
-    .page1 {
+    
+    #wip a {
         position: absolute;
-        left: 10%;
-        top: 0%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-
-    .page1scrollIndicator {
-        position: absolute;
-        left: 40%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
         top: 45%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-
-    .page2scrollIndicator {
-        position: absolute;
-        left: 50%;
-        top: 140%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-
-    .page3scrollIndicator {
-        position: absolute;
-        left: 40%;
-        bottom: -125%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-
-    .page2 {
-        position: absolute;
-        left: 10%;
-        top: 90%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-
-    .page3 {
-        position: absolute;
-        right: 10%;
-        bottom: -170%;
-        width: 1%;
-        height: 1%;
-        background-color: none;
-        z-index: -1;
-    }
-
-    .Main {
-        height: 50%;
-        width: 50%;
-        position: absolute;
-        top: 30%;
-        left: 25%;
-        background-color: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* Centering y-axis */
-        align-items: center;
-        /* Centering x-axis */
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.5s;
     }
     
-    img {
-        max-height: auto;
-        min-height: auto;
-        max-width: 80%;
-        min-width: 80%;
-        width: 80%;
-        height: auto;
-        z-index: 4;
-    }
-    
-    #test {
-        position: absolute;
-        top: 63%;
-        left: 11%;
-        max-height: auto;
-        min-height: auto;
-        max-width: 25%;
-        min-width: 25%;
-        width: 25%;
-        height: auto;
-    }
-    
-    #test2 {
-        position: absolute;
-        bottom: 65%;
-        right: 8%;
-        max-height: auto;
-        min-height: auto;
-        max-width: 30%;
-        min-width: 30%;
-        width: 30%;
-        height: auto;
-    }
-    
-    @keyframes rotating {
-        from {
-            -webkit-transform: rotate(0deg);
-        }
-        to {
-            -webkit-transform: rotate(360deg);
-        }
-    }
-    
-    @keyframes expand {
-        0% {
-            -webkit-transform: scale(1);
-        }
-        50% {
-            -webkit-transform: scale(1.4);
-        }
-        100% {
-            -webkit-transform: scale(1);
-        }
-    }
-    
-    .rotating {
-        animation: rotating 14s linear infinite;
-    }
-    
-    .expand {
-        animation: expand 5s linear infinite;
-    }
-
-    #PiRechteck:hover { 
-        opacity: 70%;
-    }
-
-    #CovidRechteck:hover {
-        opacity: 70%;
-    }
-
-    #GitHubRechteck:hover {
-        opacity: 70%;
-    }
-
-    #WeatherRechteck:hover {
-        opacity: 70%;
-    }
-
-    .GroupSVG {
-        position: absolute;
-        top: 110%;
-        right: 20%;
-        height: auto;
-        width: 60%;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.8s;
-    }
-
-    .page3SVG {
-        position: absolute;
-        top: 205%;
-        right: 25%;
-        height: auto;
-        width: 50%;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.9s;
-    }
-
-    .scrolledNav {
-        padding-top: 7px;
-        padding-left: 14px;
-        padding-right: 14px;
-        padding-bottom: 14px;
-        border-radius: 8px;
-        background-color: none;
-        text-decoration: none !important;
-        opacity: 37%;
-        transform: scale(0.93);
-    }
-
-    .scrolledNav:hover {
-        color: #40F3BD;
-        transition: all 0.2s ease-out;
-        background-color: #dffecd10;
-        transform: translateY(-1px);
-        opacity: 100%;
-    }
-
-    .active {
-        padding-top: 7px;
-        padding-left: 14px;
-        padding-right: 14px;
-        padding-bottom: 14px;
-        border-radius: 8px;
-        background-color: rgb(59, 59, 59);
-        text-decoration: none !important;
-    }
-
-    .GroupSVGMobile {
-        display: none;
-    }
-
-    .page3SVGMobile {
-        display: none;
-    }
-
     @media only screen and (max-width: 1400px) {
         .nav {
             width: 40%;
@@ -408,15 +173,12 @@
             left: 30%;
             transform: scale(0.9);
         }
-
         .logo {
             height: 35%;
         }
-
         .githubLogo {
             transform: scale(0.8);
         }
-
         .CirlceUpLeft {
             position: absolute;
             top: -12%;
@@ -426,7 +188,6 @@
             z-index: 6;
             transform: scale(0.7);
         }
-
         .CircleMiddleRight {
             position: absolute;
             top: 50%;
@@ -436,61 +197,22 @@
             z-index: 0;
             transform: scale(0.9);
         }
-
-        .CircleBottomLeft {
-            position: absolute;
-            top: 155%;
-            left: -40%;
-            height: 100%;
-            width: auto;
-            overflow: hidden;
-            z-index: 0;
-            transform: scale(0.9);
-        }
-
-        .AboutMe {
-            position: absolute;
-            top: 37%;
-            right: 30%;
-            height: auto;
-            width: 40%;
-        }
-
-        .GroupSVG {
-            position: absolute;
-            top: 110%;
-            right: 15%;
-            height: auto;
-            width: 70%;
-        }
-
-        .page3SVG {
-            position: absolute;
-            top: 205%;
-            right: 21%;
-            height: auto;
-            width: 58%;
-        }
     }
-
+    
     @media only screen and (max-width: 1050px) {
-
         .nav {
             width: 50%;
             height: 80px;
             left: 25%;
             transform: scale(0.8);
         }
-
         .logo {
             height: 30%;
         }
-
         .githubLogo {
             transform: scale(0.8);
             right: -10%;
         }
-
         .CirlceUpLeft {
             position: absolute;
             top: -12%;
@@ -500,7 +222,6 @@
             z-index: 6;
             transform: scale(0.8);
         }
-
         .CircleMiddleRight {
             position: absolute;
             top: 55%;
@@ -510,60 +231,21 @@
             z-index: 0;
             transform: scale(0.8);
         }
-
-        .CircleBottomLeft {
-            position: absolute;
-            top: 155%;
-            left: -40%;
-            height: 100%;
-            width: auto;
-            overflow: hidden;
-            z-index: 0;
-            transform: scale(0.8);
-        }
-
-        .AboutMe {
-            position: absolute;
-            top: 37%;
-            right: 30%;
-            height: auto;
-            width: 40%;
-        }
-
-        .GroupSVG {
-            position: absolute;
-            top: 110%;
-            right: 7.5%;
-            height: auto;
-            width: 85%;
-        }
-
-        .page3SVG {
-            position: absolute;
-            top: 205%;
-            right: 15%;
-            height: auto;
-            width: 70%;
-        }
     }
-
+    
     @media only screen and (max-width: 850px) {
-
         .nav {
             width: 60%;
             height: 80px;
             left: 20%;
             transform: scale(0.7);
         }
-
         .logo {
             height: 25%;
         }
-
         .githubLogo {
             transform: scale(0.76);
         }
-
         .CirlceUpLeft {
             position: absolute;
             top: -12%;
@@ -573,7 +255,6 @@
             z-index: 6;
             transform: scale(0.6);
         }
-
         .CircleMiddleRight {
             position: absolute;
             top: 59%;
@@ -583,66 +264,25 @@
             z-index: 0;
             transform: scale(0.8);
         }
-
-        .CircleBottomLeft {
-            position: absolute;
-            top: 155%;
-            left: -60%;
-            height: 100%;
-            width: auto;
-            overflow: hidden;
-            z-index: 0;
-            transform: scale(0.8);
-        }
-
-        .AboutMe {
-            position: absolute;
-            top: 37%;
-            right: 25%;
-            height: auto;
-            width: 50%;
-        }
-
-        .GroupSVG {
-            position: absolute;
-            top: 110%;
-            right: 2.5%;
-            height: auto;
-            width: 95%;
-        }
-
-        .page3SVG {
-            position: absolute;
-            top: 205%;
-            right: 12.5%;
-            height: auto;
-            width: 75%;
-        }
     }
-
-
+    
     @media only screen and (max-width: 840px) {
-
         body {
             height: 270%;
-            overflow-x: hidden !important; 
+            overflow-x: hidden !important;
         }
-
         .nav {
             width: 100%;
             height: 80px;
             left: 0%;
             transform: scale(0.8);
         }
-
         .logo {
             display: none;
         }
-
         .githubLogo {
             display: none;
         }
-
         .CirlceUpLeft {
             position: absolute;
             top: -22%;
@@ -652,85 +292,7 @@
             z-index: 6;
             transform: scale(0.6);
         }
-
         .CircleMiddleRight {
-            display:none;
-        }
-
-        .CircleBottomLeft {
-            position: absolute;
-            top: 135%;
-            left: -100%;
-            height: 70%;
-            width: auto;
-            overflow: hidden;
-            z-index: 0;
-            transform: scale(0.3);
-        }
-
-        .AboutMe {
             display: none;
-        }
-
-        .AboutMeMobile {
-            top: 35%;
-            right: 10%;
-            height: auto;
-            width: 80%;
-            display: block;
-            position: absolute;
-            animation: fade-in-right ease 0.5s forwards;
-            animation-delay: 0.6s;
-        }
-
-        .GroupSVG {
-            display: none;
-        }
-
-        .page3SVG {
-            display: none;
-        }
-
-        .GroupSVGMobile {
-            display: block;
-            position: absolute;
-            top: 85%;
-            right: 10%;
-            height: auto;
-            width: 80%;
-            z-index: 2;
-            animation: fade-in-right ease 0.5s forwards;
-            animation-delay: 0.8s;
-        }
-
-        .page3SVGMobile {
-            display: block;
-            position: absolute;
-            top: 210%;
-            right: 25%;
-            height: auto;
-            width: 50%;
-            animation: fade-in-right ease 0.5s forwards;
-            animation-delay: 1s;
-        }
-
-        .page2scrollIndicator {
-            position: absolute;
-            left: 50%;
-            top: 140%;
-            width: 1%;
-            height: 1%;
-            background-color: none;
-            z-index: -1;
-        }
-
-        .page3scrollIndicator {
-            position: absolute;
-            left: 40%;
-            top: 200%;
-            width: 1%;
-            height: 1%;
-            background-color: none;
-            z-index: -1;
         }
     }
