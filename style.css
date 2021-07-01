@@ -1,298 +1,379 @@
-    @font-face {
-        font-family: 'Circular';
-        src: url("/Assets/Circular%20Book.ttf");
-        font-style: normal;
-        font-weight: medium;
-    }
-    
-    @font-face {
-        font-family: 'Circular';
-        src: url("/Assets/Circular%20Bold.ttf");
-        font-style: normal;
-        font-weight: bold;
-    }
-    
-    @keyframes fade-in-right {
-        from {
-            opacity: 0;
-            transform: translateX(-15px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-    
-    @keyframes fade-in-right2 {
-        from {
-            opacity: 0;
-            transform: translateX(-15px);
-        }
-        to {
-            opacity: 0.8;
-            transform: translateX(0);
-        }
-    }
-    
-    * {
-        transition: all 0.25s ease-in-out;
-        scroll-behavior: smooth;
-    }
-    
-     ::selection {
-        background: #000000;
-    }
-    
-     ::-moz-selection {
-        background: #000000;
-    }
-    
-    body {
-        background-color: #0F0F0F;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-    }
-    
-    header {
-        position: sticky;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 110px;
-        background-color: #0F0F0F85;
-        backdrop-filter: saturate(230%) blur(23px);
-        -webkit-backdrop-filter: saturate(230%) blur(23px);
-        z-index: 5;
-        padding-bottom: 20px;
-        text-decoration: none !important;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.3s;
-    }
-    
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        width: 30%;
-        height: 80px;
-        position: absolute;
-        top: 35%;
-        left: 35%;
-        color: #F2FBF7;
-        background-color: #0F0F0F85;
-        backdrop-filter: saturate(230%) blur(23px);
-        -webkit-backdrop-filter: saturate(230%) blur(23px);
-        border-radius: 20px;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-family: Circular;
-        font-size: 20px;
-        text-decoration: none !important;
-        opacity: 85%;
-    }
-    
-    .logo {
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        height: 35%;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        width: auto;
-    }
-    
-    .githubLogo {
-        position: absolute;
-        top: 50%;
-        right: 2%;
-        height: 35%;
-        width: auto;
-    }
-    
-    .githubLogo:hover {
-        transform: translateY(-1px);
-        opacity: 70%;
-    }
-    
-    .CirlceUpLeft {
-        position: absolute;
-        top: -16%;
-        left: -5%;
-        height: 40%;
-        width: auto;
-        z-index: 6;
-        overflow: hidden;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.4s;
-        user-select: none;
-    }
-    
-    .CircleMiddleRight {
-        position: absolute;
-        top: 45%;
-        right: -5%;
-        height: 70%;
-        width: auto;
-        z-index: 0;
-        overflow: hidden;
-        animation: fade-in-right ease 0.5s forwards;
-        opacity: 0%;
-        animation-delay: 0.6s;
-    }
-    
-    #wip {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        user-select: none;
-        text-align: center;
-        font-family: 'Circular';
-        font-size: 4rem;
-        color: white;
-    }
-    
-    #wip a {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        top: 45%;
-    }
-    
-    @media only screen and (max-width: 1400px) {
-        .nav {
-            width: 40%;
-            height: 80px;
-            left: 30%;
-            transform: scale(0.9);
-        }
-        .logo {
-            height: 35%;
-        }
-        .githubLogo {
-            transform: scale(0.8);
-        }
-        .CirlceUpLeft {
-            position: absolute;
-            top: -12%;
-            left: -7%;
-            height: 40%;
-            width: auto;
-            z-index: 6;
-            transform: scale(0.7);
-        }
-        .CircleMiddleRight {
-            position: absolute;
-            top: 50%;
-            right: -5%;
-            height: 100%;
-            width: auto;
-            z-index: 0;
-            transform: scale(0.9);
-        }
-    }
-    
-    @media only screen and (max-width: 1050px) {
-        .nav {
-            width: 50%;
-            height: 80px;
-            left: 25%;
-            transform: scale(0.8);
-        }
-        .logo {
-            height: 30%;
-        }
-        .githubLogo {
-            transform: scale(0.8);
-            right: -10%;
-        }
-        .CirlceUpLeft {
-            position: absolute;
-            top: -12%;
-            left: -7%;
-            height: 40%;
-            width: auto;
-            z-index: 6;
-            transform: scale(0.8);
-        }
-        .CircleMiddleRight {
-            position: absolute;
-            top: 55%;
-            right: -10%;
-            height: 100%;
-            width: auto;
-            z-index: 0;
-            transform: scale(0.8);
-        }
-    }
-    
-    @media only screen and (max-width: 850px) {
-        .nav {
-            width: 60%;
-            height: 80px;
-            left: 20%;
-            transform: scale(0.7);
-        }
-        .logo {
-            height: 25%;
-        }
-        .githubLogo {
-            transform: scale(0.76);
-        }
-        .CirlceUpLeft {
-            position: absolute;
-            top: -12%;
-            left: -10%;
-            height: 40%;
-            width: auto;
-            z-index: 6;
-            transform: scale(0.6);
-        }
-        .CircleMiddleRight {
-            position: absolute;
-            top: 59%;
-            right: -12%;
-            height: 100%;
-            width: auto;
-            z-index: 0;
-            transform: scale(0.8);
-        }
-    }
-    
-    @media only screen and (max-width: 840px) {
-        body {
-            height: 270%;
-            overflow-x: hidden !important;
-        }
-        .nav {
-            width: 100%;
-            height: 80px;
-            left: 0%;
-            transform: scale(0.8);
-        }
-        .logo {
-            display: none;
-        }
-        .githubLogo {
-            display: none;
-        }
-        .CirlceUpLeft {
-            position: absolute;
-            top: -22%;
-            left: -50%;
-            height: 40%;
-            width: auto;
-            z-index: 6;
-            transform: scale(0.6);
-        }
-        .CircleMiddleRight {
-            display: none;
-        }
-    }
+@font-face {
+    font-family: 'Roobert';
+    src: url("/Assets/Fonts/Roobert-Light.otf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url("/Assets/Fonts/Roobert-Regular.otf");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Roobert-Medium';
+    src: url("/Assets/Fonts/Roobert-Medium.otf");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url("/Assets/Fonts/Roobert-SemiBold.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roobert-Bold';
+    src: url("/Assets/Fonts/Roobert-Bold.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roobert';
+    src: url("/Assets/Fonts/Roobert-Heavy.otf");
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    transition: all 0.15s ease-in-out;
+}
+
+header {
+    position: fixed;
+    top: 50px;
+    width: 280px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    background-color: #000000ab;
+    backdrop-filter: saturate(190%) blur(40px);
+    -webkit-backdrop-filter: saturate(140%) blur(50px);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    transition: all 0.15s ease-in-out;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+a {
+    color: #ffffff;
+}
+
+.nav-link {
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    border-radius: 14px;
+    background-color: none;
+    text-decoration: none !important;
+    font-family: 'Roobert';
+    font-weight: 300;
+    font-size: 19px;
+    color: white;
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: #dffecd10;
+    transform: translateY(-1px);
+    color: #40F3BD;
+}
+
+.rectangle {
+    background-color: #ffffff8e;
+    backdrop-filter: saturate(190%) blur(40px);
+    -webkit-backdrop-filter: saturate(140%) blur(50px);
+}
+
+.rectangle2 {
+    background-color: #141414bb;
+    backdrop-filter: saturate(190%) blur(40px);
+    -webkit-backdrop-filter: saturate(140%) blur(50px);
+}
+
+#nav-link1.active {
+    background-color: #dffecd10;
+}
+
+#nav-link2.active {
+    background-color: #dffecd10;
+}
+
+#nav-link3.active {
+    background-color: #dffecd10;
+}
+
+#rect1 {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.15s;
+}
+
+#rect1.hide {
+    height: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+#rect2 {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    transition: 0.4s ease-in-out;
+}
+
+#rect2.hide {
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    background-color: #ffffffa8;
+    transition-delay: 0.15s;
+}
+
+#groupWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#groupSVG {
+    position: relative;
+    height: 10%;
+    width: 660px;
+    padding-top: 400px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#groupSVG.show {
+    top: 0%;
+    opacity: 1;
+    transition: 0.3s ease-out;
+    transition-delay: 0.32s;
+    user-select: initial;
+    pointer-events: initial;
+    background-color: none;
+}
+
+#button {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    height: 70px;
+    width: 120px;
+    opacity: 1;
+    background-color: #1d1d1d09;
+    border-radius: 17px;
+    transition: 0.15s ease-in-out;
+}
+
+#button:hover {
+    opacity: 1;
+    background-color: #1d1d1d11;
+    transform: translateX(2px);
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+#button img {
+    filter: grayscale() brightness(50%);
+    opacity: 100% !important;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.35) rotate(180deg);
+}
+
+#button:hover img {
+    filter: grayscale(none) brightness(100%);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.35) rotate(180deg);
+}
+
+.clipWrapper {
+    background: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clip {
+    background-color: none;
+    position: absolute;
+    height: 147px;
+    width: 200px;
+    margin: 0 auto;
+    transform: scale(1);
+    z-index: 10;
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+    backdrop-filter: blur(40px) brightness(120%) saturate(115%);
+    -webkit-backdrop-filter: blur(35px) brightness(120%) saturate(115%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#clip.active {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+#blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+}
+
+#linksWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#linksWrapper.show {
+    top: 0%;
+    opacity: 1;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+
+#links {
+    position: relative;
+    height: 150px;
+    width: 450px;
+    background-color: none;
+    margin: 0 auto;
+    top: 300px;
+}
+
+#logo {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    background-color: none;
+    float: left;
+}
+
+#logo img {
+    position: relative;
+    height: 60%;
+    width: auto;
+    left: 10%;
+    top: 20%;
+    transform: scale(0.8);
+}
+
+#name {
+    position: relative;
+    height: 100%;
+    width: 75%;
+    background-color: none;
+    float: right;
+}
+
+#name p {
+    font-family: 'Roobert';
+    font-size: 25px;
+    padding-top: 3px;
+    line-height: 42px;
+    padding-left: 15px;
+}
+
+#name a {
+    text-decoration: underline !important;
+    color: rgb(39, 39, 39);
+}
+
+#links2 {
+    position: relative;
+    height: 150px;
+    width: 450px;
+    background-color: none;
+    margin: 0 auto;
+    top: 300px;
+}
+
+#logo2 {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    background-color: none;
+    float: left;
+}
+
+#logo2 img {
+    position: relative;
+    height: 60%;
+    width: auto;
+    left: 10%;
+    top: 20%;
+    transform: scale(0.8);
+}
+
+#name2 {
+    position: relative;
+    height: 100%;
+    width: 75%;
+    background-color: none;
+    float: right;
+}
+
+#name2 p {
+    font-family: 'Roobert';
+    font-size: 25px;
+    padding-top: 3px;
+    line-height: 42px;
+    padding-left: 15px;
+}
+
+#name2 a {
+    text-decoration: underline !important;
+    color: rgb(39, 39, 39);
+}
