@@ -324,10 +324,12 @@ a {
     padding-top: 3px;
     line-height: 42px;
     padding-left: 15px;
+    font-weight: 300;
 }
 
 #name a {
     text-decoration: underline !important;
+    font-weight: 400 !important;
     color: rgb(39, 39, 39);
 }
 
@@ -371,9 +373,11 @@ a {
     padding-top: 3px;
     line-height: 42px;
     padding-left: 15px;
+    font-weight: 300;
 }
 
 #name2 a {
     text-decoration: underline !important;
     color: rgb(39, 39, 39);
+    font-weight: 400 !important;
 }
