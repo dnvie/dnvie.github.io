@@ -147,7 +147,7 @@ a {
 #behance:hover {
     transition: all 0.2s ease-in-out !important;
     transition-delay: 0s !important;
-    transform: scale(1.025);
+    transform: scale(1.015);
     cursor: pointer;
     background-color: #d4ffed;
 }
@@ -171,7 +171,7 @@ a {
 #photo:hover {
     transition: all 0.2s ease-in-out !important;
     transition-delay: 0s !important;
-    transform: scale(1.025);
+    transform: scale(1.015);
     cursor: pointer;
     background-color: #d4ffed;
 }
@@ -195,7 +195,7 @@ a {
 #motion:hover {
     transition: all 0.2s ease-in-out !important;
     transition-delay: 0s !important;
-    transform: scale(1.025);
+    transform: scale(1.015);
     cursor: pointer;
     background-color: #d4ffed;
 }
