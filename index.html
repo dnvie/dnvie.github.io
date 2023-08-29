@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,9 +15,9 @@
     <meta property="og:type" content="website">
     <meta property=“og:image“ content=“/Assets/dnvieLogo.jpg“>
     <meta property=“og:site_name“ content=“dnvie“>
-    <script src="https://kit.fontawesome.com/3e92d3f9e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script type="text/javascript" src="/script.js"></script>
-    <title>dnvie[dot]com</title>
+    <title>Daniel Nikbakht - dnvie.com</title>
     <link rel="shortcut icon" id='favicon' href="/Assets/FaviconLight.png" type="image/png" />
     <script>
         const usesDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || false;
@@ -38,82 +37,56 @@
 </head>
 </head>
 
-<body>
-    <header id="header">
-        <a class="link" href="https://github.com/dnvie" target="_blank">
-            <p class="nav-link" id="nav-link1"><i class="fab fa-github"></i> GitHub</p>
-        </a>
-        <a class="link" href="https://xmrscan.com" target="_blank">
-            <p class="nav-link" id="nav-link2"><i class="fab fa-monero"></i> xmrscan</p>
-        </a>
-        <p class="nav-link" id="nav-link3" onclick="circleOpen();setTimeout(behanceAdd, 500);setTimeout(photoAdd, 600);setTimeout(motionAdd, 700)" ;><i class="fas fa-paint-brush"></i> Design</a>
-        </p>
-    </header>
-
-    <div id="blur"></div>
-
-    <div id="background">
-        <div class="clipWrapper" id="clipWrapper">
-            <div class="svg-clipped" id="clip" onclick="circleClose()">
-                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 146.77">
-            <defs>
-            <clipPath id="svgPath">
-            <path id="Pfad_2737" data-name="Pfad 2737" d="M200,2.77V143.34a3.42,3.42,0,0,1-3.41,3.43H170a1.84,1.84,0,0,1-1.58-.89l-.2-.35h0l-61.41-107L85.48,1.28,84.8.2a.1.1,0,0,1,0-.14h31.46A7.76,7.76,0,0,1,123,3.88l44.1,75.91a1,1,0,0,0,1.34.44,1,1,0,0,0,.55-.94V2.71A2.72,2.72,0,0,1,171.71,0h25.5A2.77,2.77,0,0,1,200,2.75h0Z" transform="translate(0 0)" style="fill:#fff"/>
-            <path id="Pfad_2739" data-name="Pfad 2739" d="M105.53,73.41a82.87,82.87,0,0,1-3.66,24.37h0c-.23.74-.47,1.47-.71,2.21A79.58,79.58,0,0,1,98,108a74.43,74.43,0,0,1-9.46,15.46,65.28,65.28,0,0,1-19.91,16.83,50,50,0,0,1-11.24,4.53A55.8,55.8,0,0,1,45,146.73H4a4,4,0,0,1-4-4H0V4A4,4,0,0,1,3.77,0H42.36A57.36,57.36,0,0,1,57.44,2h0A49.56,49.56,0,0,1,68.62,6.47,64.93,64.93,0,0,1,88.54,23.41,77.76,77.76,0,0,1,101.16,47c.22.67.44,1.33.64,2h0A82.45,82.45,0,0,1,105.53,73.41Z" transform="translate(0 0)" style="fill:#fff"/>
-        </clipPath>
-    </defs>
-        </svg>
+<body class="transition">
+    <div class="frame">
+        <div class="header">
+            <div class="nameContainer">
+                <div id="el1" class="name transition hidden">Daniel Nikbakht</div>
+                <div id="el2" class="location transition hidden"><span class="material-symbols-rounded">distance</span>Vienna, Austria</div>
             </div>
-            <div id="circle" class="cirlce"></div>
-            <div id="circle2" class="cirlce"></div>
-            <div id="circle3" class="cirlce"></div>
-            <div id="closebtn" onclick="circleClose()"><i class="fas fa-times"></i></div>
-            <div id="designHeader">
-                <a href="https://behance.net/dnvie">
-                    <div id="behance" class="design"><i class="fab fa-behance-square"></i> Graphic Design</div>
-                </a>
-                <a href="https://imgur.com/a/WQ1LpDr">
-                    <div id="photo" class="design"><i class="fas fa-camera"></i> Photography</div>
-                </a>
-                <a href="https://imgur.com/a/q0L1myc">
-                    <div id="motion" class="design"><i class="fas fa-bezier-curve"></i> Motion Graphics</div>
-                </a>
+            <div class="handleFrame">
+                <div id="el3" class="handleContainer transition hidden">
+                    <div class="logo">
+                        <img src="/Assets/FaviconLight.png" alt="">
+                    </div>
+                    <div class="handle">@dnvie</div>
+                </div>
+                <div id="el4" class="themeSwitch transition hidden" onclick="switchThemeHelper()"><span class="material-symbols-rounded">light_mode</span></div>
             </div>
-
+            
         </div>
-
-
-        <svg viewBox="0 0 100 100" height="100%" width="100%" preserveAspectRatio="xMidYMid slice">
-            <defs>
-            <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
-            <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
-            <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
-            <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
-            <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
-            <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
-            </defs>
-            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
-            <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
-            <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
-            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
-            </rect>
-            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
-            <animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
-            <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
-            <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
-            </rect>
-            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
-            <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
-            <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
-            <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
-            </rect>
-            <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
-            <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
-            </rect>
-            <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
-            </rect>
-            </svg>
-    </div>
+        <div id="el5" class="contentFrame transition frameHidden">
+            <div class="contentContainer">
+                <div class="container">
+                    <div id="el6" class="tag educationTag transition hidden">Education</div>
+                    <div id="el7" class="text transition hidden">Currently studying Computer Science <span class="textFaded transition">(BSc)</span> at Vienna University of Technology <span class="textFaded transition">(TU Wien)</span></div>
+                    <div id="el8" class="smallText transition hidden">Previously: Computer Science at Swiss Federal Institute of Technology (ETH Zurich)</div>
+                </div>
+                <div class="container">
+                    <div id="el9" class="tag programmingTag transition hidden">Programming Skills</div>
+                    <div id="el10" class="text transition hidden">Advanced: <span class="textFaded transition">Java, JavaScript, TypeScript, HTML5, CSS3</span></div>
+                    <div id="el11" class="text transition hidden">Intermediate: <span class="textFaded transition">Angular, SQL, Go</span></div>
+                    <div id="el12" class="text transition hidden">Beginner: <span class="textFaded transition">Spring Boot, Node.js, Docker, C, XML</span></div>
+                </div>
+                <div class="container">
+                    <div id="el13" class="tag designTag transition hidden">Design Skills</div>
+                    <div id="el14" class="text transition hidden">Advanced: <span class="textFaded transition">Adobe Photoshop, Adobe Illustrator, Adobe XD, Figma</span></div>
+                    <div id="el15" class="text transition hidden">Intermediate: <span class="textFaded transition">Adobe Premiere Pro, Adobe After Effects, Adobe Lightroom</span></div>
+                </div>
+                <div class="container">
+                    <div id="el16" class="tag featuredTag transition hidden">Featured Project</div>
+                    <div id="el17" class="text transition hidden">xmrscan: <span class="textFaded transition">A Monero ($XMR) blockchain explorer</span></div>
+                    <div id="el18" class="text transition hidden">Used Technologies: <span class="textFaded transition">Go and Angular, deployed on Google Cloud Run and GitHub Pages</span></div>
+                    <div id="el19" class="text transition hidden"><span class="textFaded transition">View the </span><a href="https://github.com/dnvie/xmrscan">Source Code</a><span class="textFaded transition"> or directly visit </span><a href="https://xmrscan.com">xmrscan.com</a></div>
+                </div>
+                <div class="container">
+                    <div id="el20" class="tag linksTag transition hidden">Links</div>
+                    <div id="el21" class="text transition hidden"><span class="textFaded transition">Get more infos or get in touch with me on </span><a href="https://www.linkedin.com/in/daniel-nikbakht-7271a628a/">LinkedIn</a></div>
+                    <div id="el22" class="text transition hidden"><span class="textFaded transition">View my coding projects on </span><a href="https://github.com/dnvie">GitHub</a></div>
+                    <div id="el23" class="text transition hidden"><span class="textFaded transition">Check out some of my graphic design work on </span><a href="https://www.behance.net/dnvie">Behance</a></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -1,38 +1,38 @@
-$(window).on("load", $('#clip').addClass('active'));
+window.onload = setTimeout(showContent, 650);
 
-function circleOpen() {
-    $('#circle').addClass('active');
-    $('#circle2').addClass('active');
-    $('#circle3').addClass('active');
-    $('#clip').addClass('hide');
-    $(".nav-link").addClass('hide');
-    $('#closebtn').addClass('show');
-    $(".link").addClass('hide');
-    $("header").addClass('hide');
-};
+function switchTheme() {
+    if (document.documentElement.getAttribute('data-theme') == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('data-theme', 'light');
+        document.getElementById('el4').innerHTML = `<span class="material-symbols-rounded">light_mode</span>`
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('data-theme', 'dark');
+        document.getElementById('el4').innerHTML = `<span class="material-symbols-rounded">dark_mode</span>`
 
-function behanceAdd() {
-    $('#behance').addClass('show');
-};
+    }
+}
 
-function photoAdd() {
-    $('#photo').addClass('show');
-};
+function showContent() {
+    for (let i = 0; i < 24; i++) {
+        if(i != 5) {
+        setTimeout(function(){$('#el' + i).removeClass('hidden');}, 100+i*15);
+        }
+      }
+      setTimeout(function(){$('#el5').removeClass('frameHidden');}, 200);
+}
 
-function motionAdd() {
-    $('#motion').addClass('show');
-};
+function hideContent() {
+    for (let i = 0; i < 24; i++) {
+        if(i != 5) {
+            setTimeout(function(){$('#el' + i).addClass('hidden');}, 100+i*15);
+        }
+      }
+      setTimeout(function(){$('#el5').addClass('frameHidden');}, 200);
+}
 
-function circleClose() {
-    $('#circle').removeClass('active');
-    $('#circle2').removeClass('active');
-    $('#circle3').removeClass('active');
-    $('#clip').removeClass('hide');
-    $(".nav-link").removeClass('hide');
-    $('#closebtn').removeClass('show');
-    $('#behance').removeClass('show');
-    $('#photo').removeClass('show');
-    $('#motion').removeClass('show');
-    $(".link").removeClass('hide');
-    $("header").removeClass('hide');
-};
+function switchThemeHelper() {
+    setTimeout(hideContent, 1);
+    setTimeout(switchTheme, 550);
+    setTimeout(showContent, 750);
+}
