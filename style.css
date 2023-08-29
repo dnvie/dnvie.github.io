@@ -212,7 +212,6 @@ a:hover {
 }
 
 .contentFrame {
-    width: 100%;
     height: fit-content;
     background-color: var(--contentFrameBackground);
     border-radius: 20px;
@@ -240,6 +239,7 @@ a:hover {
     width: fit-content;
     border-radius: 100px;
     margin-bottom: 10px;
+    transform: translateX(-4px);
 }
 
 .text {
@@ -317,6 +317,7 @@ a:hover {
         align-items: flex-start;
         gap: 25px;
         margin-left: 10px;
+        width: fit-content;
     }
 
     .container {
