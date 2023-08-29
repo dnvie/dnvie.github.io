@@ -229,6 +229,7 @@ a:hover {
 }
 
 .tag {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +240,7 @@ a:hover {
     width: fit-content;
     border-radius: 100px;
     margin-bottom: 10px;
-    transform: translateX(-4px);
+    right: 4px;
 }
 
 .text {
