@@ -215,7 +215,7 @@ a:hover {
     height: fit-content;
     background-color: var(--contentFrameBackground);
     border-radius: 20px;
-    border: 3px solid var(--contentFrameBorder);
+    border: 2px solid var(--contentFrameBorder);
     margin-bottom: 30px;
 }
 
