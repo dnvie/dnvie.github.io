@@ -4,6 +4,7 @@
     --textFaded: #ffffff60;
     --textExtraFaded: #ffffff30;
     --handleBackground: #181818;
+    --handleBackgroundHover: #222222;
     --contentFrameBackground: rgba(24, 24, 24, 0.4);
     --contentFrameBorder: #171717;
     --contentFrameBackgroundHidden: rgba(24, 24, 24, 0);
@@ -17,7 +18,10 @@
     --featuredTagBackground: rgba(249, 94, 215, 0.1);
     --featuredTagColor: rgba(249, 94, 215, 1);
     --linksTagBackground: rgba(235, 188, 68, 0.1);
+    --linksTagBackgroundHover: rgba(235, 188, 68, 0.2);
     --linksTagColor: rgba(235, 188, 68, 1);
+    --dropdownLinkBackground: rgba(255, 255, 255, 0.05);
+    --dropdownLinkBackgroundHover: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] {
@@ -26,6 +30,7 @@
     --textFaded: #1c1c1c74;
     --textExtraFaded: #1c1c1c3a;
     --handleBackground: #DEDEDE;
+    --handleBackgroundHover: #c9c9c9;
     --contentFrameBackground: rgba(227, 227, 227, 0.4);
     --contentFrameBorder: #E2E2E2;
     --contentFrameBackgroundHidden: rgba(227, 227, 227, 0);
@@ -39,7 +44,10 @@
     --featuredTagBackground: #ffc6f38a;
     --featuredTagColor: #dc06ad;
     --linksTagBackground: #ebd4998c;
+    --linksTagBackgroundHover: #e3c4708c;
     --linksTagColor: #ce9400;
+    --dropdownLinkBackground: rgb(0, 0, 0, 0.05);
+    --dropdownLinkBackgroundHover: rgb(0, 0, 0, 0.1);
 }
 
 @font-face {
@@ -125,6 +133,7 @@ a:hover {
 }
 
 .header {
+    position: relative;
     margin-top: 100px;
     width: 100%;
     height: fit-content;
@@ -166,6 +175,7 @@ a:hover {
     height: 60px;
     width: 60px;
     background-color: var(--handleBackground);
+    border: 1px solid var(--dropdownLinkBackground);
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -176,6 +186,7 @@ a:hover {
 .themeSwitch:hover {
     cursor: pointer;
     user-select: none;
+    background-color: var(--handleBackgroundHover);
 }
 
 .handleContainer {
@@ -184,8 +195,15 @@ a:hover {
     gap: 12px;
     padding: 0px 15px 0px 10px;
     background-color: var(--handleBackground);
+    border: 1px solid var(--dropdownLinkBackground);
     border-radius: 100px;
     height: 60px;
+}
+
+.handleContainer:hover {
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--handleBackgroundHover);
 }
 
 .logo {
@@ -209,6 +227,69 @@ a:hover {
     font-size: 20px; 
     color: var(--textFaded);
     transform: translateY(-2px);
+}
+
+.dropdown {
+    z-index: 10;
+    position: absolute;
+    background-color: var(--handleBackground);
+    border: 1px solid var(--dropdownLinkBackground);
+    right: 0px;
+    top: 86px;
+    width: 218px;
+    height: fit-content;
+    padding: 14px 0px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkContainer {
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.linkContainer a {
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-family: 'Aeonik';
+    font-weight: 400;
+    font-size: 18px; 
+    color: var(--textFaded);
+    background-color: var(--dropdownLinkBackground);
+    border: 1px solid var(--dropdownLinkBackground);
+    height: 50px;
+    width: 190px;
+}
+
+#link4 {
+    background-color: var(--linksTagBackground);
+    color: var(--linksTagColor);
+    border: 1px solid var(--linksTagBackground);
+}
+
+#link4:hover {
+    background-color: var(--linksTagBackgroundHover);
+    color: var(--linksTagColor);
+}
+
+.link:hover {
+    background-color: var(--dropdownLinkBackgroundHover);
+    color: var(--text);
+    cursor: pointer;
 }
 
 .contentFrame {
@@ -326,5 +407,9 @@ a:hover {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+    .dropdown {
+        left: 0px !important;
+        top: 186px !important;
     }
 }

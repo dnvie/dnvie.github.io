@@ -16,6 +16,7 @@
     <meta property=“og:image“ content=“/Assets/dnvieLogo.jpg“>
     <meta property=“og:site_name“ content=“dnvie“>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"></script>
     <script type="text/javascript" src="/script.js"></script>
     <title>Daniel Nikbakht - dnvie.com</title>
     <link rel="shortcut icon" id='favicon' href="/Assets/FaviconLight.png" type="image/png" />
@@ -37,7 +38,7 @@
 </head>
 </head>
 
-<body class="transition">
+<body class="transition" onclick="closeDropdown()">
     <div class="frame">
         <div class="header">
             <div class="nameContainer">
@@ -45,7 +46,7 @@
                 <div id="el2" class="location transition hidden"><span class="material-symbols-rounded">distance</span>Vienna, Austria</div>
             </div>
             <div class="handleFrame">
-                <div id="el3" class="handleContainer transition hidden">
+                <div id="el3" class="handleContainer transition hidden" onclick="openDropdown(event)">
                     <div class="logo">
                         <img src="/Assets/FaviconLight.png" alt="">
                     </div>
@@ -53,7 +54,14 @@
                 </div>
                 <div id="el4" class="themeSwitch transition hidden" onclick="switchThemeHelper()"><span class="material-symbols-rounded">light_mode</span></div>
             </div>
-            
+            <div id="dropdown" class="dropdown hidden transition">
+                <div class="linkContainer">
+                    <a href="https://www.linkedin.com/in/daniel-nikbakht-7271a628a/"><div id="link1" class="link hidden transition">LinkedIn<span class="material-symbols-rounded">arrow_outward</span></div></a>
+                    <a href="https://www.github.com/dnvie"><div id="link2" class="link hidden transition">GitHub<span class="material-symbols-rounded">arrow_outward</span></div></a>
+                    <a href="https://www.behance.net/dnvie"><div id="link3" class="link hidden transition">Behance<span class="material-symbols-rounded">arrow_outward</span></div></a>
+                    <a href="/Assets/Resume.pdf" target="_blank"><div id="link4" class="link hidden transition">Resumé<span class="material-symbols-rounded">contact_page</span></div></a>
+                </div>  
+            </div>
         </div>
         <div id="el5" class="contentFrame transition frameHidden">
             <div class="contentContainer">
