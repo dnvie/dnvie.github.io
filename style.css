@@ -237,8 +237,8 @@ a:hover {
     right: 0px;
     top: 86px;
     width: 218px;
-    height: fit-content;
-    padding: 14px 0px;
+    height: 280px;
+    padding: 0;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -293,6 +293,8 @@ a:hover {
 }
 
 .contentFrame {
+    position: relative;
+    z-index: 1;
     height: fit-content;
     background-color: var(--contentFrameBackground);
     border-radius: 20px;
