@@ -46,10 +46,12 @@ function openDropdown(event) {
     setTimeout(function(){$('#link2').removeClass('hidden');}, 200);
     setTimeout(function(){$('#link3').removeClass('hidden');}, 240);
     setTimeout(function(){$('#link4').removeClass('hidden');}, 280);
+    setTimeout(function(){$('#dropdownIcon').addClass('rotated');}, 280);
 }
 
 function closeDropdown() {
     document.getElementById("el3").onclick = openDropdown;
+    setTimeout(function(){$('#dropdownIcon').removeClass('rotated');}, 280);
     setTimeout(function(){$('#dropdown').addClass('hidden');}, 280);
     setTimeout(function(){$('#link1').addClass('hidden');}, 121);
     setTimeout(function(){$('#link2').addClass('hidden');}, 81);

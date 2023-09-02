@@ -227,6 +227,8 @@ a:hover {
     font-size: 20px; 
     color: var(--textFaded);
     transform: translateY(-2px);
+    display: flex;
+    align-items: center;
 }
 
 .dropdown {
@@ -236,13 +238,21 @@ a:hover {
     border: 1px solid var(--dropdownLinkBackground);
     right: 0px;
     top: 86px;
-    width: 218px;
+    width: 240px;
     height: 280px;
     padding: 0;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#dropdownIcon {
+    transform: rotate(0deg);
+}
+
+.rotated {
+    transform: rotate(180deg) !important;
 }
 
 .linkContainer {
@@ -272,7 +282,7 @@ a:hover {
     background-color: var(--dropdownLinkBackground);
     border: 1px solid var(--dropdownLinkBackground);
     height: 50px;
-    width: 190px;
+    width: 212px;
 }
 
 #link4 {
