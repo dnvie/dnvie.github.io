@@ -50,7 +50,7 @@ function openDropdown(event) {
 
 function closeDropdown() {
     document.getElementById("el3").onclick = openDropdown;
-    setTimeout(function(){$('#dropdown').addClass('hidden');}, 200);
+    setTimeout(function(){$('#dropdown').addClass('hidden');}, 280);
     setTimeout(function(){$('#link1').addClass('hidden');}, 121);
     setTimeout(function(){$('#link2').addClass('hidden');}, 81);
     setTimeout(function(){$('#link3').addClass('hidden');}, 41);
