@@ -302,6 +302,15 @@ a:hover {
     cursor: pointer;
 }
 
+.arrow {
+    transition: transform 0.1s;
+    animation-timing-function: cubic-bezier(.74, -0.01, .26, 1.04);
+}
+
+.link:hover .arrow {
+    transform: translateX(3px);
+}
+
 .contentFrame {
     position: relative;
     z-index: 1;
