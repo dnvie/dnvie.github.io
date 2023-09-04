@@ -22,6 +22,8 @@
     --linksTagColor: rgba(235, 188, 68, 1);
     --dropdownLinkBackground: rgba(255, 255, 255, 0.05);
     --dropdownLinkBackgroundHover: rgba(255, 255, 255, 0.1);
+    --bold: 400;
+    --medium: 300;
 }
 
 [data-theme="dark"] {
@@ -48,6 +50,8 @@
     --linksTagColor: #ce9400;
     --dropdownLinkBackground: rgb(0, 0, 0, 0.05);
     --dropdownLinkBackgroundHover: rgb(0, 0, 0, 0.1);
+    --bold: 400;
+    --medium: 400;
 }
 
 @font-face {
@@ -347,18 +351,19 @@ a:hover {
 
 .text {
     font-family: 'Aeonik';
-    font-weight: 400;
+    font-weight: var(--bold);
     font-size: 22px; 
     color: var(--text);
 }
 
 .textFaded {
+    font-weight: var(--medium);
     color: var(--textFaded);
 }
 
 .smallText {
     font-family: 'Aeonik';
-    font-weight: 400;
+    font-weight: var(--medium);
     font-size: 18px; 
     color: var(--textExtraFaded);
 }
