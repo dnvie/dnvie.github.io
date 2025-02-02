@@ -24,7 +24,7 @@
     --medium: 375;
     --tag: 450;
     font-family: InterVariable, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1, 'dlig' 1, 'ss03' 1, 'cv01' 1, 'cv06' 1, 'cv12' 1, 'cv13' 1;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'dlig' 1, 'ss03' 1, 'cv01' 1, 'cv05' 1, 'cv06' 1, 'cv12' 1, 'cv13' 1;
     letter-spacing: -0.025em;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -213,6 +213,8 @@ a:hover {
 }
 
 .handle {
+    position: relative;
+    top: 1px;
     font-family: 'InterVariable';
     font-weight: calc(var(--bold) + 50);
     font-size: 20px; 
