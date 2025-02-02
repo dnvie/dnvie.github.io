@@ -230,8 +230,8 @@ a:hover {
     right: 0px;
     top: 86px;
     width: 240px;
-    height: fit-content;
-    padding: 16px 0;
+    height: 132px;
+    padding: 12px 0;
     border-radius: 30px;
     display: flex;
     justify-content: center;
