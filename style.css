@@ -214,7 +214,7 @@ a:hover {
 
 .handle {
     font-family: 'InterVariable';
-    font-weight: calc(var(--bold) + 25);
+    font-weight: calc(var(--bold) + 50);
     font-size: 20px; 
     color: var(--textFaded);
     transform: translateY(-2px);
@@ -267,7 +267,7 @@ a:hover {
     justify-content: center;
     border-radius: 100px;
     font-family: 'InterVariable';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px; 
     color: var(--textFaded);
     background-color: var(--dropdownLinkBackground);
