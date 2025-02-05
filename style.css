@@ -92,6 +92,13 @@ a:hover {
     width: 24px;
     height: 24px;
     color: inherit;
+    transform: scale(0.9);
+    opacity: 0.65;
+  }
+
+  .themeIcon {
+    transform: scale(1) !important;
+    opacity: 1 !important;
   }
 
 .transition {
