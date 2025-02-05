@@ -146,6 +146,10 @@ a:hover {
     letter-spacing: -0.03em;
 }
 
+.lastNames {
+    white-space: nowrap;
+}
+
 .location {
     font-family: 'InterVariable';
     font-weight: calc(var(--bold) - 25);
@@ -430,8 +434,14 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 327px) {
+@media only screen and (max-width: 345px) {
     .dropdown {
         top: 302px !important;
+    }
+    .name {
+        max-width: 300px;
+    }
+    .lastNames {
+        white-space: initial;
     }
 }
